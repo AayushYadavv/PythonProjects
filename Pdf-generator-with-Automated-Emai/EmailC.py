@@ -40,7 +40,7 @@ def mailsender(file,name):
 	with smtplib.SMTP('smtp.gmail.com',port = 587) as smtp:
 		smtp.ehlo()
 		smtp.starttls()
-		smtp.login('insight.svpcet@gmail.com','*********')
+		smtp.login('email','password')
 		smtp.send_message(email)
 
 with open('CulCdetails.csv',mode = 'r') as exfile:
